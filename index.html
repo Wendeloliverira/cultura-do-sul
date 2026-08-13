@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b2b21">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Site educativo sobre a história e a cultura da Região Sul do Brasil, com quiz interativo.">
+  <title>Raízes do Sul | Cultura da Região Sul do Brasil</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar container">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">
+        <span class="logo-mark">SUL</span>
+        <span>Raízes do Sul</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#historia">História</a>
+        <a href="#estados">Estados</a>
+        <a href="#cultura">Cultura</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container reveal">
+      <p class="eyebrow">BRASIL • REGIÃO SUL</p>
+      <h1>História, cultura e tradições da Região Sul</h1>
+      <p class="hero-text">
+        Conheça um pouco da história e mergulhe nas manifestações culturais do Paraná,
+        de Santa Catarina e do Rio Grande do Sul.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#historia">Começar a explorar</a>
+        <a class="btn btn-ghost" href="#quiz">Ir para o quiz</a>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>3</strong><span>estados</span></div>
+        <div><strong>PR</strong><span>Paraná</span></div>
+        <div><strong>SC</strong><span>Santa Catarina</span></div>
+        <div><strong>RS</strong><span>Rio Grande do Sul</span></div>
+      </div>
+    </div>
+
+    <div class="hero-shape" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="section history" id="historia">
+      <div class="container two-columns">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark">UM POUCO DE HISTÓRIA</p>
+          <h2>Como a diversidade cultural do Sul foi construída?</h2>
+        </div>
+
+        <div class="history-text reveal">
+          <p>
+            A Região Sul é formada por <strong>Paraná, Santa Catarina e Rio Grande do Sul</strong>.
+            Muito antes da chegada dos europeus, o território já era habitado por diferentes povos
+            indígenas, entre eles Guarani, Kaingang e Xokleng/Laklãnõ.
+          </p>
+
+          <p>
+            Ao longo do tempo, a colonização portuguesa e espanhola, as disputas territoriais,
+            as missões, a pecuária e o tropeirismo transformaram a ocupação da região. A partir do
+            século XIX, diferentes fluxos migratórios também deixaram marcas na arquitetura,
+            alimentação, festas, religiosidade e modos de vida.
+          </p>
+
+          <p>
+            Por isso, a cultura sulista não possui uma única origem. Ela é resultado de encontros,
+            conflitos, permanências e transformações envolvendo povos indígenas, populações negras,
+            descendentes de europeus e muitos outros grupos sociais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section states" id="estados">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow dark">TRÊS ESTADOS, MUITAS IDENTIDADES</p>
+          <h2>Conheça cada estado</h2>
+          <p>Selecione um estado para ver algumas de suas características culturais.</p>
+        </div>
+
+        <div class="state-tabs reveal" role="tablist" aria-label="Estados da Região Sul">
+          <button class="state-tab active" type="button" data-state="pr" role="tab" aria-selected="true">Paraná</button>
+          <button class="state-tab" type="button" data-state="sc" role="tab" aria-selected="false">Santa Catarina</button>
+          <button class="state-tab" type="button" data-state="rs" role="tab" aria-selected="false">Rio Grande do Sul</button>
+        </div>
+
+        <div class="state-panel reveal" id="statePanel">
+          <div class="state-visual pr-bg" id="stateVisual">
+            <span class="state-initial" id="stateInitial">PR</span>
+            <div class="visual-caption">
+              <small>CAPITAL</small>
+              <strong id="stateCapital">Curitiba</strong>
+            </div>
+          </div>
+
+          <div class="state-content">
+            <p class="state-kicker" id="stateKicker">PARANÁ</p>
+            <h3 id="stateTitle">Tradições que atravessam caminhos</h3>
+            <p id="stateDescription"></p>
+            <div class="feature-list" id="featureList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section culture" id="cultura">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow light">CULTURA EM DESTAQUE</p>
+          <h2>Sabores, festas, música e modos de viver</h2>
+          <p>
+            A cultura da Região Sul é diversa e muda de cidade para cidade. Conheça alguns exemplos.
+          </p>
+        </div>
+
+        <div class="culture-grid">
+          <article class="culture-card reveal">
+            <span class="culture-icon">🥘</span>
+            <p class="card-number">01</p>
+            <h3>Culinária</h3>
+            <p>
+              Churrasco, barreado, pinhão, arroz carreteiro, cuca, entrevero e outros pratos ajudam
+              a contar a história da região.
+            </p>
+          </article>
+
+          <article class="culture-card reveal">
+            <span class="culture-icon">🪗</span>
+            <p class="card-number">02</p>
+            <h3>Música e dança</h3>
+            <p>
+              Fandango caiçara, vanerão, chamamé, milonga e diferentes músicas de baile fazem parte
+              das manifestações regionais.
+            </p>
+          </article>
+
+          <article class="culture-card reveal">
+            <span class="culture-icon">🎉</span>
+            <p class="card-number">03</p>
+            <h3>Festas populares</h3>
+            <p>
+              Festas religiosas, celebrações comunitárias e eventos ligados a heranças culturais
+              movimentam muitas cidades.
+            </p>
+          </article>
+
+          <article class="culture-card reveal">
+            <span class="culture-icon">🧉</span>
+            <p class="card-number">04</p>
+            <h3>Costumes</h3>
+            <p>
+              Rodas de chimarrão, feiras, encontros familiares e práticas ligadas ao campo e à cidade
+              mostram como tradição e mudança convivem.
+            </p>
+          </article>
+
+          <article class="culture-card reveal">
+            <span class="culture-icon">🧵</span>
+            <p class="card-number">05</p>
+            <h3>Artesanato</h3>
+            <p>
+              Rendas, madeira, couro, lã, cerâmica e fibras naturais expressam conhecimentos transmitidos
+              entre diferentes gerações.
+            </p>
+          </article>
+
+          <article class="culture-card reveal">
+            <span class="culture-icon">🏛️</span>
+            <p class="card-number">06</p>
+            <h3>Patrimônio</h3>
+            <p>
+              Centros históricos, casas de madeira e construções de diferentes influências formam uma
+              paisagem cultural plural.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section traditions">
+      <div class="container">
+        <div class="tradition-highlight reveal">
+          <div>
+            <p class="eyebrow dark">PATRIMÔNIO VIVO</p>
+            <h2>Fandango caiçara</h2>
+            <p>
+              Presente especialmente em comunidades caiçaras do litoral do Paraná e de São Paulo,
+              o fandango reúne música, dança, instrumentos artesanais, sociabilidade e conhecimentos
+              ligados à vida comunitária.
+            </p>
+          </div>
+
+          <div class="quote-box">
+            <span>“</span>
+            <p>A cultura permanece viva quando seus saberes são recriados, ensinados e compartilhados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="container quiz-layout">
+        <div class="quiz-intro reveal">
+          <p class="eyebrow light">DESAFIO FINAL</p>
+          <h2>Quanto você aprendeu?</h2>
+          <p>
+            Responda às perguntas sobre a história e a cultura da Região Sul. Cada pergunta possui
+            apenas uma alternativa correta.
+          </p>
+
+          <div class="quiz-rules">
+            <div><strong>10</strong><span>perguntas</span></div>
+            <div><strong>1</strong><span>resposta correta</span></div>
+          </div>
+        </div>
+
+        <div class="quiz-card reveal">
+          <div id="quizStart" class="quiz-screen">
+            <div class="quiz-symbol">?</div>
+            <h3>Pronto para o desafio?</h3>
+            <p>Leia cada pergunta com atenção e escolha uma das alternativas.</p>
+            <button class="btn btn-primary btn-full" id="startQuizBtn" type="button">Começar quiz</button>
+          </div>
+
+          <div id="quizGame" class="quiz-screen hidden">
+            <div class="quiz-topbar">
+              <span id="questionCounter">Pergunta 1 de 10</span>
+              <span id="scoreCounter">0 pontos</span>
+            </div>
+
+            <div class="progress-track">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <h3 class="question-text" id="questionText"></h3>
+            <div class="answers" id="answersContainer"></div>
+
+            <div class="feedback hidden" id="feedback" aria-live="polite"></div>
+
+            <button class="btn btn-primary btn-full hidden" id="nextQuestionBtn" type="button">
+              Próxima pergunta
+            </button>
+          </div>
+
+          <div id="quizResult" class="quiz-screen hidden">
+            <div class="result-score"><span id="finalScore">0</span>/10</div>
+            <h3 id="resultTitle">Resultado</h3>
+            <p id="resultMessage"></p>
+            <button class="btn btn-primary btn-full" id="restartQuizBtn" type="button">Refazer quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Raízes do Sul</strong>
+        <p>Site educativo sobre a cultura da Região Sul do Brasil.</p>
+      </div>
+      <span id="year"></span>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
